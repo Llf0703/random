@@ -1,11 +1,9 @@
+<!DOCTYPE html>
 <html>
 
 <head lang="en">
     <meta charset="UTF-8">
-    <title>关于-抽奖机</title>
-    <link rel="stylesheet" href="https://llf0703.com/usr/themes/typecho-theme-amaze-master/css/amazeui.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="https://llf0703.com/usr/themes/typecho-theme-amaze-master/css/customui.min.css">
+    <title>抽奖机</title>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
@@ -17,14 +15,43 @@
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+    <style>
+        .box {
+            width: 100%;
+            height: 1000px;
+            margin: auto;
+            clear: both;
+        }
+
+        #btn {}
+
+        .name {
+            width: 100px;
+            height: 30px;
+            float: left;
+            background-color: white;
+            margin-left: 10px;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 15px;
+        }
+
+        #span {
+            float: right;
+            position: relative;
+            top: 55px;
+            right: 185px;
+        }
+    </style>
 </head>
 
 <body>
     <ul class="nav nav-pills" role="tablist">
-        <li role="presentation" class="active">
+        <li role="presentation">
             <a href="/">首页</a>
         </li>
-        <li role="presentation">
+        <li role="presentation" class="active">
             <a href="/v1">V1</a>
         </li>
         <li role="presentation">
@@ -37,23 +64,12 @@
             <a href="https://github.com/Llf0703/Random/" target="_blank">Github</a>
         </li>
     </ul>
-    <div class="am-g am-g-fixed blog-fixed">
-        <div class="am-u-sm-12">
-            <article class="am-article blog-article-p">
-                <div class="am-article-hd">
-                    <h1 class="am-article-title blog-text-center">首页</h1>
-                </div>
-                <div class="am-article-bd">
-                    <p>请选择版本:</p>
-                    <p>
-                        <li><a href="/v1">V1:可以重复抽同一个人</a></li>
-                        <li><a href="/v2">V2:只能抽同一个人一次</a></li>
-                    </p>
-                    <p>Hosted By <a href="https://pages.coding.net/" target="_blank">Coding Pages</a></p>
-                </div>
-            </article>
-        </div>
+    <div class="jumbotron" style="text-align:center">
+        <input type="button" class="btn btn-info btn-lg" id="btn" value="抽奖" />
+        <div class="box" id="box"></div>
     </div>
+    <script src="js/name.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
