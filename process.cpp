@@ -8,7 +8,7 @@ int main()
     bool can=false;
     freopen("#.csv","r",stdin);
     //使用csv文件读入
-    freopen("v1/js/name.js","w",stdout);
+    freopen("js/name.js","w",stdout);
     cout<<"var arr="<<endl;
     cout<<"["<<endl;
     while (getline(cin,x))
