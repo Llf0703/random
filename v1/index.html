@@ -3,7 +3,7 @@
 
 <head lang="en">
     <meta charset="UTF-8">
-    <title>首页-抽奖机</title>
+    <title>V1-抽奖机</title>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
@@ -16,13 +16,9 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://cdn.bootcss.com/toastr.js/2.1.4/toastr.min.css">
+    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
-    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
-
-    <script src="https://cdn.bootcss.com/sweetalert/2.1.0/sweetalert.min.js"></script>
-    
-    <link href="http://mishengqiang.com/sweetalert/css/sweetalert.css" rel="stylesheet">
+    <script src="cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
     <style>
         .box {
@@ -56,11 +52,8 @@
 </head>
 
 <body>
-    <script>
-        toastr.options.positionClass = 'toast-top-center';
-    </script>
     <ul class="nav nav-pills" role="tablist">
-        <li role="presentation" class="active">
+        <li role="presentation">
             <a href="/">首页</a>
         </li>
         <li role="presentation">
@@ -74,7 +67,6 @@
         <input type="button" class="btn btn-info btn-lg" id="btn" value="抽奖" />
         <div class="box" id="box"></div>
     </div>
-    <script src="https://cdn.bootcss.com/toastr.js/2.1.4/toastr.min.js"></script>
     <script src="js/name.js"></script>
     <script src="js/main.js"></script>
 </body>
