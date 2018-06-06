@@ -6,7 +6,7 @@ string x;
 int main()
 {
     bool can=false;
-    freopen("#.csv","r",stdin);
+    freopen(".csv","r",stdin);
     //使用csv文件读入
     freopen("js/name.js","w",stdout);
     cout<<"var arr="<<endl;
