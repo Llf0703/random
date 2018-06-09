@@ -18,9 +18,10 @@ for (var i = 0; i < arr.length; i++) {  //将页面中每个姓名元素输出
 };
 
 my$("btn").onclick = function () {
-    var peo = arr.length;
+    var peo = arr.length,left=arr.length-cnt+1+"";
+    var print="已经抽了"+left+"次";
     if (this.value === "抽奖") {
-        if (cnt > 0) toastr.success('成功');
+        if (cnt > 0) toastr.success(print);
         else {
             toastr.error('已经抽完了');
             return;
@@ -41,10 +42,6 @@ my$("btn").onclick = function () {
         this.value = "抽奖";
         can[now] = 1;  //去重
         cnt = cnt - 1;
-        swal({ 
-            title: arr[now] , 
-            text: "恭喜你！",
-            type: "success", 
-          });
+        swal(arr[now],"恭喜你！");
     };
 };
