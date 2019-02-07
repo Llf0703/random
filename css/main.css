@@ -1,0 +1,28 @@
+.box {
+    width: 100%;
+    margin: auto;
+    clear: both;
+}
+
+.name {
+    width: 100px;
+    height: 30px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 30px;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+#span {
+    float: right;
+    position: relative;
+    top: 55px;
+    right: 185px;
+}
+
+.container-fixed {
+    margin-top:2em;
+    text-align: center;
+}

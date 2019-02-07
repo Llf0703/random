@@ -1,0 +1,16 @@
+{
+    "use_name.js" : 0,
+    "names" : [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+    ],
+    "hack" : [
+        0,
+        2
+    ],
+    "tot" : -1,
+    "cannot_more_than_1" : 1
+}
